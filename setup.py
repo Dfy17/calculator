@@ -1,0 +1,20 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="gastrointestinal_tumor_calculator",
+    version="0.1",
+    packages=find_packages(),
+    install_requires=[
+        "numpy==1.24.3",
+        "pandas==1.5.3",
+        "scipy==1.10.1",  # 重点：强制安装 scipy
+        "tableone==0.13.2",
+        "matplotlib==3.7.1",
+        "seaborn==0.12.2",
+        "xgboost==1.7.6",
+        "lightgbm==3.3.5",
+        "scikit-learn==1.2.2",
+        "lime==0.2.0.1",
+        "streamlit==1.32.2",
+    ],
+)

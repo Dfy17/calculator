@@ -1,17 +1,4 @@
 
-# newcalculator.py 第一行添加：
-import subprocess
-import sys
-
-# 强制安装所有依赖（包括 scipy）
-subprocess.check_call([
-    sys.executable, "-m", "pip", "install", 
-    "numpy==1.24.3", "pandas==1.5.3", "scipy==1.10.1",
-    "tableone==0.13.2", "matplotlib==3.7.1", "seaborn==0.12.2",
-    "xgboost==1.7.6", "lightgbm==3.3.5", "scikit-learn==1.2.2",
-    "lime==0.2.0.1", "streamlit==1.32.2"
-])
-
 import warnings
 warnings.filterwarnings("ignore")
 import os
